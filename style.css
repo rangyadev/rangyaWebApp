@@ -19,7 +19,13 @@ header {
   color: white;
 }
 
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .headerLogo,
+.headerUserInfo ul,
 .headerInfo ul {
   margin: 1em;
 }
@@ -28,8 +34,15 @@ header {
   width: 5em;
 }
 
+.headerUserInfo ul {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
 .headerInfo ul {
   display: flex;
   align-items: center;
   gap: 2em;
+  font-size: 0.8em;
 }
