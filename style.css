@@ -55,3 +55,8 @@ header a:hover {
   gap: 2em;
   font-size: 0.8em;
 }
+
+.mainPage img {
+  width: 100%;
+  object-fit: cover;
+}
