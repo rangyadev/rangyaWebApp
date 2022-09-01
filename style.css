@@ -24,6 +24,11 @@ header a {
   color: inherit;
 }
 
+header a:hover {
+  color: inherit;
+  opacity: 0.5;
+}
+
 .headerLogo,
 .headerUserInfo ul,
 .headerInfo ul {
