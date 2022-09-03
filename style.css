@@ -20,6 +20,7 @@ header {
   color: white;
   padding-left: 3em;
   padding-right: 3em;
+  list-style-type: none;
 }
 
 header a {
@@ -57,6 +58,22 @@ header a:hover {
 }
 
 .mainPage {
-  background-image: url("assets/homePageBackground/shoeAnnouncement_1.jpg");
-  background-size: 100% 50%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.mainPage .arrows {
+  font-size: 2.5em;
+}
+
+.mainText h1 {
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.mainText p {
+  font-size: 2em;
+  padding: 0.5em;
 }
