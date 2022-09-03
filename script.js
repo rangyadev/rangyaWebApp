@@ -2,6 +2,8 @@
 let mainPageBackground = document.querySelector("#mainPageBackground");
 let changePicBack = document.querySelector("#changePicBack");
 let changePicNext = document.querySelector("#changePicNext");
+//Change Slide Indicator Based on Current Slide
+let slideIndicators = document.querySelectorAll(".slideIndicator");
 //Background Components
 let mainPagePictureIndex = 0;
 let mainPicBackgroundCollection = [
@@ -13,6 +15,7 @@ let mainPicBackgroundCollection = [
 ];
 //Set Background on Load
 mainPageBackground.src = mainPicBackgroundCollection[mainPagePictureIndex];
+slideIndicators[mainPagePictureIndex].style.backgroundColor = "white";
 
 //Changes Picture When Arrow is Clicked
 //Previous Picture
@@ -20,6 +23,12 @@ changePicBack.addEventListener("click", () => {
   if (mainPagePictureIndex > 0) {
     mainPagePictureIndex--;
     mainPageBackground.src = mainPicBackgroundCollection[mainPagePictureIndex];
+    //Changes Slides When Changes Picture background
+    slideIndicators[mainPagePictureIndex].style.backgroundColor = "white";
+    for (let i = 0; i < mainPicBackgroundCollection.length; i++) {
+      if (i === mainPagePictureIndex) continue;
+      slideIndicators[i].style.backgroundColor = "";
+    }
   }
 });
 
@@ -28,5 +37,11 @@ changePicNext.addEventListener("click", () => {
   if (mainPagePictureIndex < mainPicBackgroundCollection.length - 1) {
     mainPagePictureIndex++;
     mainPageBackground.src = mainPicBackgroundCollection[mainPagePictureIndex];
+    //Changes Slides When Changes Picture background
+    slideIndicators[mainPagePictureIndex].style.backgroundColor = "white";
+    for (let i = 0; i < mainPicBackgroundCollection.length; i++) {
+      if (i === mainPagePictureIndex) continue;
+      slideIndicators[i].style.backgroundColor = "";
+    }
   }
 });

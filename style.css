@@ -101,18 +101,15 @@ header a:hover {
 .slideIndicators {
   display: flex;
   justify-content: center;
-  transform: translateY(18em);
+  transform: translateY(16em);
 }
 .slideIndicator {
-  width: 100px;
-  background-color: gray;
-  margin-left: 1em;
-  border-radius: 0.5em;
-}
-.slideIndicator p {
-  padding: 0.15em;
-  font-size: 1em;
-  visibility: hidden;
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+  /* background-color: white; */
+  border: 3px solid white;
+  margin: 0.5em;
 }
 
 /* Realease*/
