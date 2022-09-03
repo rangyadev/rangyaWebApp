@@ -117,4 +117,20 @@ header a:hover {
 .Releases h1 {
   font-weight: bold;
   font-size: 2em;
+  margin-top: 2.5em;
+  margin-left: 2.5em;
+}
+
+.newReleasesCollection {
+  display: flex;
+  margin-top: 0.5em;
+  margin-left: 5em;
+}
+
+.newReleasesCard {
+  height: 25em;
+  width: 20em;
+  background-color: gray;
+  border-radius: 0.5em;
+  margin: 2em;
 }
