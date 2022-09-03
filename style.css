@@ -21,6 +21,7 @@ header {
   padding-left: 3em;
   padding-right: 3em;
   list-style-type: none;
+  position: sticky;
 }
 
 header a {
