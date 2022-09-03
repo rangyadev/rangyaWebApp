@@ -56,7 +56,7 @@ header a:hover {
   font-size: 0.8em;
 }
 
-.mainPage img {
-  width: 100%;
-  object-fit: cover;
+.mainPage {
+  background-image: url("assets/homePageBackground/shoeAnnouncement_1.jpg");
+  background-size: 100% 50%;
 }
