@@ -96,3 +96,27 @@ header a:hover {
   font-size: 2em;
   padding: 0.5em;
 }
+
+/*Slide Indicator*/
+.slideIndicators {
+  display: flex;
+  justify-content: center;
+  transform: translateY(18em);
+}
+.slideIndicator {
+  width: 100px;
+  background-color: gray;
+  margin-left: 1em;
+  border-radius: 0.5em;
+}
+.slideIndicator p {
+  padding: 0.15em;
+  font-size: 1em;
+  visibility: hidden;
+}
+
+/* Realease*/
+.Releases h1 {
+  font-weight: bold;
+  font-size: 2em;
+}
