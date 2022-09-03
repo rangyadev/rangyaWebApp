@@ -57,17 +57,32 @@ header a:hover {
   font-size: 0.8em;
 }
 
-.mainPage {
+/* Main Page*/
+.mainPage img {
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  width: 100%;
+  height: 60em;
+  filter: brightness(80%);
+}
+.mainContent {
   display: flex;
   justify-content: space-between;
   text-align: center;
   align-items: center;
+  color: white;
+  height: 55em;
 }
 
-.mainPage .arrows {
+.mainContent .arrows {
   font-size: 2.5em;
+  padding: 1em;
+  float: left;
 }
 
+.mainText {
+}
 .mainText h1 {
   font-size: 4em;
   font-weight: bold;
