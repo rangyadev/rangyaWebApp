@@ -21,41 +21,66 @@ header {
   padding-left: 3em;
   padding-right: 3em;
   list-style-type: none;
-  position: sticky;
 }
 
+.searchBar a,
 header a {
   text-decoration: none;
   color: inherit;
 }
 
-header a:hover {
+header a:hover,
+#searchButton:hover {
   color: inherit;
   opacity: 0.8;
   text-decoration: underline;
 }
 
+.searchBarLogo,
+.searchBarText,
+.closeSearchBar,
 .headerLogo,
 .headerUserInfo ul,
 .headerInfo ul {
   margin: 1em;
 }
 
+.searchBarLogo img,
 .headerLogo img {
   width: 5em;
 }
 
+.closeSearchBar,
 .headerUserInfo ul {
   display: flex;
   align-items: center;
   gap: 2em;
 }
 
+.searchBarText,
 .headerInfo ul {
   display: flex;
   align-items: center;
   gap: 2em;
   font-size: 0.8em;
+}
+
+/*Search Bar*/
+.searchBar {
+  display: flex;
+  position: absolute;
+  z-index: 100;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "Arimo", sans-serif;
+  font-size: 1.5em;
+  background-color: black;
+  color: white;
+  padding-left: 3em;
+  padding-right: 3em;
+  list-style-type: none;
+  transition: 1s;
 }
 
 /* Main Page*/
@@ -86,8 +111,9 @@ header a:hover {
   opacity: 0.8;
 }
 
-.mainText {
-}
+/* .mainText { */
+/* } */
+
 .mainText h1 {
   font-size: 4em;
   font-weight: bold;
@@ -114,6 +140,9 @@ header a:hover {
 }
 
 /* Realease*/
+.Releases {
+  margin-left: 5em;
+}
 .Releases h1 {
   font-weight: bold;
   font-size: 2em;

@@ -67,3 +67,10 @@ setInterval(function () {
   }
   changePicture();
 }, 60000);
+
+//Enable Search Bar
+let searchButton = document.querySelector("#searchButton");
+let searchBar = document.querySelector(".searchBar");
+let header = document.querySelector("header");
+
+searchButton.addEventListener("click", () => {});
