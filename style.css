@@ -39,7 +39,6 @@ header a:hover,
 #searchButton:hover {
   color: inherit;
   opacity: 0.8;
-  text-decoration: underline;
 }
 
 .searchBarLogo,
@@ -75,6 +74,11 @@ header a:hover,
   letter-spacing: 0.25em;
 }
 
+.headerInfo li :hover {
+  letter-spacing: 0.35em;
+  transition: 0.1s;
+}
+
 /*Search Bar*/
 .searchBar {
   display: flex;
@@ -97,9 +101,9 @@ header a:hover,
   transition: position 0.2s;
 }
 
-.searchBar input {
+.searchBarText input {
   font-family: "Arimo", sans-serif;
-  margin-right: 5em;
+  margin-right: 7em;
 }
 
 /* Main Page*/
@@ -160,19 +164,20 @@ header a:hover,
 
 /* Realease*/
 .Releases {
-  margin-left: 5em;
+  margin: 5em;
 }
 .Releases h1 {
+  display: flex;
+  justify-content: center;
   font-weight: bold;
-  font-size: 2em;
-  margin-top: 2.5em;
-  margin-left: 2.5em;
+  font-size: 2.5em;
+  align-items: flex-start;
+  margin-right: 30em;
 }
 
 .newReleasesCollection {
   display: flex;
-  margin-top: 0.5em;
-  margin-left: 5em;
+  justify-content: center;
 }
 
 .newReleasesCard {
