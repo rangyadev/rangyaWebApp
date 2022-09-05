@@ -183,7 +183,10 @@ header a:hover,
 .ReleasesCollection {
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 10em;
+}
+
+#newReleases {
+  margin-bottom: 6em;
 }
 
 .ReleasesCard {
@@ -192,4 +195,15 @@ header a:hover,
   background-color: gray;
   border-radius: 0.8em;
   margin: 2em;
+}
+
+.Releases .arrows {
+  font-size: 2.5em;
+  color: black;
+  position: relative;
+  align-self: center;
+}
+
+.Releases .arrows:hover {
+  opacity: 0.5;
 }

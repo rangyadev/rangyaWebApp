@@ -97,15 +97,43 @@ let newReleases = document.querySelector("#newReleases");
 let releasingSoons = document.querySelector("#releasingSoon");
 let newReleasesCollection = ["tite"];
 let releasingSoonCollection = ["tite", "tite", "tite"];
-//Create Slide Indicators
-for (let i = 0; i < newReleasesCollection.length; i++) {
+//Create New Releases
+for (let i = 0; i < 5; i++) {
   let newRelease = document.createElement("div");
   newRelease.classList.add("ReleasesCard");
   newReleases.appendChild(newRelease);
 }
 
-for (let i = 0; i < releasingSoonCollection.length; i++) {
+//Add Arrow to the Right Side for New Releases
+//Create Arrow
+let nextNewReleases = document.createElement("i");
+//Create Arrow Container
+let arrowContainerNR = document.createElement("div");
+//Add Classess
+arrowContainerNR.classList.add("arrows");
+nextNewReleases.classList.add("bi");
+nextNewReleases.classList.add("bi-caret-right");
+nextNewReleases.setAttribute("id", "nextNewReleases");
+
+newReleases.appendChild(arrowContainerNR);
+arrowContainerNR.appendChild(nextNewReleases);
+
+//Create Releasing Soon
+for (let i = 0; i < 5; i++) {
   let releasingSoon = document.createElement("div");
   releasingSoon.classList.add("ReleasesCard");
   releasingSoons.appendChild(releasingSoon);
 }
+
+//Add Arrow to the Right Side for New Releases
+//Create Arrow
+let nextReleasingSoon = document.createElement("i");
+let arrowContainerRS = document.createElement("div");
+//Add Classess
+arrowContainerRS.classList.add("arrows");
+nextReleasingSoon.classList.add("bi");
+nextReleasingSoon.classList.add("bi-caret-right");
+nextReleasingSoon.setAttribute("id", "nextReleasingSoon");
+
+releasingSoons.appendChild(arrowContainerRS);
+arrowContainerRS.appendChild(nextReleasingSoon);
