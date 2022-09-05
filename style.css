@@ -68,8 +68,6 @@ header a:hover,
 /*Search Bar*/
 .searchBar {
   display: flex;
-  position: absolute;
-  z-index: 100;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -80,7 +78,11 @@ header a:hover,
   padding-left: 3em;
   padding-right: 3em;
   list-style-type: none;
-  transition: 1s;
+  transition: 0.5s;
+}
+.searchBarHidden {
+  position: absolute;
+  transform: translateY(-15em);
 }
 
 /* Main Page*/
