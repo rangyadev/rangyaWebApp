@@ -71,6 +71,10 @@ header a:hover,
   font-size: 0.8em;
 }
 
+.headerInfo ul {
+  letter-spacing: 0.25em;
+}
+
 /*Search Bar*/
 .searchBar {
   display: flex;
@@ -84,12 +88,18 @@ header a:hover,
   padding-left: 3em;
   padding-right: 3em;
   list-style-type: none;
-  transition: 0.5s;
+  transition: 0.2s;
   visibility: visible;
 }
 .searchBarHidden {
   position: absolute;
   visibility: hidden;
+  transition: position 0.2s;
+}
+
+.searchBar input {
+  font-family: "Arimo", sans-serif;
+  margin-right: 5em;
 }
 
 /* Main Page*/

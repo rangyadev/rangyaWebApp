@@ -8,19 +8,19 @@ let slideIndicatorsContainer = document.querySelector(".slideIndicators");
 //Background Components
 let mainPagePictureIndex = 0;
 let mainPicBackgroundCollection = [
-	"assets/homePageBackground/shoeAnnouncement_1.jpg",
-	"assets/homePageBackground/shoeAnnouncement_2.jpg",
-	"assets/homePageBackground/shoeAnnouncement_3.jpg",
-	"assets/homePageBackground/shoeAnnouncement_4.jpg",
-	"assets/homePageBackground/shoeAnnouncement_5.jpg",
+  "assets/homePageBackground/shoeAnnouncement_1.jpg",
+  "assets/homePageBackground/shoeAnnouncement_2.jpg",
+  "assets/homePageBackground/shoeAnnouncement_3.jpg",
+  "assets/homePageBackground/shoeAnnouncement_4.jpg",
+  "assets/homePageBackground/shoeAnnouncement_5.jpg",
 ];
 
 //Create Slide Indicators
 for (let i = 0; i < mainPicBackgroundCollection.length; i++) {
-	let slideIndicator = document.createElement("div");
-	slideIndicator.classList.add("slideIndicator");
-	slideIndicatorsContainer.appendChild(slideIndicator);
-	slideIndicators.push(slideIndicator);
+  let slideIndicator = document.createElement("div");
+  slideIndicator.classList.add("slideIndicator");
+  slideIndicatorsContainer.appendChild(slideIndicator);
+  slideIndicators.push(slideIndicator);
 }
 
 //Set Background on Load
@@ -30,42 +30,42 @@ slideIndicators[mainPagePictureIndex].style.backgroundColor = "white";
 //Changes Picture When Arrow is Clicked
 //Previous Picture
 changePicBack.addEventListener("click", () => {
-	if (mainPagePictureIndex > 0) {
-		mainPagePictureIndex--;
-	} else {
-		mainPagePictureIndex = mainPicBackgroundCollection.length - 1;
-	}
-	changePicture();
+  if (mainPagePictureIndex > 0) {
+    mainPagePictureIndex--;
+  } else {
+    mainPagePictureIndex = mainPicBackgroundCollection.length - 1;
+  }
+  changePicture();
 });
 
 //Next Picture
 changePicNext.addEventListener("click", () => {
-	if (mainPagePictureIndex < mainPicBackgroundCollection.length - 1) {
-		mainPagePictureIndex++;
-	} else {
-		mainPagePictureIndex = 0;
-	}
-	changePicture();
+  if (mainPagePictureIndex < mainPicBackgroundCollection.length - 1) {
+    mainPagePictureIndex++;
+  } else {
+    mainPagePictureIndex = 0;
+  }
+  changePicture();
 });
 
 function changePicture() {
-	mainPageBackground.src = mainPicBackgroundCollection[mainPagePictureIndex];
-	//Changes Slides When Changes Picture background
-	slideIndicators[mainPagePictureIndex].style.backgroundColor = "white";
-	for (let i = 0; i < mainPicBackgroundCollection.length; i++) {
-		if (i === mainPagePictureIndex) continue;
-		slideIndicators[i].style.backgroundColor = "";
-	}
+  mainPageBackground.src = mainPicBackgroundCollection[mainPagePictureIndex];
+  //Changes Slides When Changes Picture background
+  slideIndicators[mainPagePictureIndex].style.backgroundColor = "white";
+  for (let i = 0; i < mainPicBackgroundCollection.length; i++) {
+    if (i === mainPagePictureIndex) continue;
+    slideIndicators[i].style.backgroundColor = "";
+  }
 }
 
 //
-setInterval(function() {
-	if (mainPagePictureIndex < mainPicBackgroundCollection.length - 1) {
-		mainPagePictureIndex++;
-	} else {
-		mainPagePictureIndex = 0;
-	}
-	changePicture();
+setInterval(function () {
+  if (mainPagePictureIndex < mainPicBackgroundCollection.length - 1) {
+    mainPagePictureIndex++;
+  } else {
+    mainPagePictureIndex = 0;
+  }
+  changePicture();
 }, 60000);
 
 //Enable Search Bar
@@ -80,14 +80,14 @@ searchBar.classList.add("searchBarHidden");
 
 //Show Search Bar and Hide Header
 searchButton.addEventListener("click", () => {
-	header.classList.add("headerHidden");
-	searchBar.classList.add("searchBar");
-	searchBar.classList.remove("searchBarHidden");
+  header.classList.add("headerHidden");
+  searchBar.classList.add("searchBar");
+  searchBar.classList.remove("searchBarHidden");
 });
 
 //Close Search Bar and Show Header
 closeSearchBar.addEventListener("click", () => {
-	header.classList.remove("headerHidden");
-	searchBar.classList.remove("searchBar");
-	searchBar.classList.add("searchBarHidden");
+  header.classList.remove("headerHidden");
+  searchBar.classList.remove("searchBar");
+  searchBar.classList.add("searchBarHidden");
 });
