@@ -93,12 +93,15 @@ closeSearchBar.addEventListener("click", () => {
 });
 
 //Releases Cards
+let numberOfCards = 4;
+
+//Releases Cards
 let newReleases = document.querySelector("#newReleases");
 let releasingSoons = document.querySelector("#releasingSoon");
 let newReleasesCollection = ["tite"];
 let releasingSoonCollection = ["tite", "tite", "tite"];
 //Create New Releases
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < numberOfCards; i++) {
   let newRelease = document.createElement("div");
   newRelease.classList.add("ReleasesCard");
   newReleases.appendChild(newRelease);
@@ -119,7 +122,7 @@ newReleases.appendChild(arrowContainerNR);
 arrowContainerNR.appendChild(nextNewReleases);
 
 //Create Releasing Soon
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < numberOfCards; i++) {
   let releasingSoon = document.createElement("div");
   releasingSoon.classList.add("ReleasesCard");
   releasingSoons.appendChild(releasingSoon);
