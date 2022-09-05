@@ -66,7 +66,7 @@ setInterval(function () {
     mainPagePictureIndex = 0;
   }
   changePicture();
-}, 10000);
+}, 12000);
 
 //Enable Search Bar
 let searchButton = document.querySelector("#searchButton");
