@@ -21,6 +21,12 @@ header {
   padding-left: 3em;
   padding-right: 3em;
   list-style-type: none;
+  visibility: visible;
+}
+
+.headerHidden {
+  position: absolute;
+  visibility: hidden;
 }
 
 .searchBar a,
@@ -79,10 +85,11 @@ header a:hover,
   padding-right: 3em;
   list-style-type: none;
   transition: 0.5s;
+  visibility: visible;
 }
 .searchBarHidden {
   position: absolute;
-  transform: translateY(-15em);
+  visibility: hidden;
 }
 
 /* Main Page*/
