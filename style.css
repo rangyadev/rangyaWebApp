@@ -165,25 +165,31 @@ header a:hover,
 /* Realease*/
 .Releases {
   margin: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  margin-left: 6em;
 }
 .Releases h1 {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   font-weight: bold;
   font-size: 2.5em;
   align-items: flex-start;
   margin-right: 30em;
 }
 
-.newReleasesCollection {
+.ReleasesCollection {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  margin-bottom: 10em;
 }
 
-.newReleasesCard {
+.ReleasesCard {
   height: 25em;
   width: 20em;
   background-color: gray;
-  border-radius: 0.5em;
+  border-radius: 0.8em;
   margin: 2em;
 }
