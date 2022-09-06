@@ -195,7 +195,7 @@ header a:hover,
 .ReleasesCard {
   display: flex;
   flex-direction: column;
-  height: 30em;
+  height: 35em;
   width: 25em;
   background-color: #f6f6f6;
   border-radius: 0.8em;
@@ -203,7 +203,7 @@ header a:hover,
 }
 
 .ReleasesCard img {
-  height: 16em;
+  height: 20em;
   object-fit: cover;
   border-top-right-radius: 1em;
   border-top-left-radius: 1em;
