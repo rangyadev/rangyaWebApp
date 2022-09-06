@@ -176,8 +176,8 @@ header a:hover,
   justify-content: flex-start;
   font-weight: bold;
   font-size: 2.5em;
-  align-items: flex-start;
-  margin-right: 30em;
+  align-self: flex-start;
+  margin-left: 3em;
 }
 
 .ReleasesCollection {
@@ -196,7 +196,7 @@ header a:hover,
   display: flex;
   flex-direction: column;
   height: 35em;
-  width: 25em;
+  width: 27em;
   background-color: #f6f6f6;
   border-radius: 0.8em;
   margin: 2em;
@@ -218,16 +218,16 @@ header a:hover,
 .releasesCardInfo h2 {
   font-size: 2em;
   font-weight: bold;
-  margin-left: 0.8em;
+  margin-left: 0.7em;
   margin-top: 0.8em;
 }
 .releasesCardInfo p {
   margin-left: 1.5em;
-  margin-top: 0.5em;
+  margin-top: 1em;
 }
 .releasesCardInfo a {
   align-self: center;
-  margin-top: 1.5em;
+  margin-top: 2em;
   font-weight: bold;
   color: inherit;
   text-decoration: none;

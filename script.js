@@ -98,7 +98,26 @@ let numberOfCards = 3;
 //Releases Cards
 let newReleases = document.querySelector("#newReleases");
 let releasingSoons = document.querySelector("#releasingSoon");
-let newReleasesCollection = ["tite"];
+let newReleasesCollection = [
+  {
+    image: "assets/shoeItems/paranoise_1.jpg",
+    title: "ParaNoise 2.0",
+    desc: "G-Dragon x Nike",
+    date: "23H:34M:23S",
+  },
+  {
+    image: "assets/shoeItems/kwondo_1.jpeg",
+    title: "KWONDO 1",
+    desc: "Peaceminusone x Nike",
+    date: "23H:34M:23S",
+  },
+  {
+    image: "assets/shoeItems/DunkPanda_1.jpg",
+    title: "White Black Panda",
+    desc: "Nike Dunk Low Retro",
+    date: "23H:34M:23S",
+  },
+];
 let releasingSoonCollection = ["tite", "tite", "tite"];
 //Create New Releases
 for (let i = 0; i < numberOfCards; i++) {
@@ -112,12 +131,11 @@ for (let i = 0; i < numberOfCards; i++) {
   let newReleaseTitle = document.createElement("h2");
   let newReleaseDesc = document.createElement("p");
   let newReleaseLink = document.createElement("a");
-  newReleaseImage.setAttribute("src", "assets/shoeItems/paranoise_1.jpg");
+  newReleaseImage.setAttribute("src", newReleasesCollection[i].image);
   newReleaseInfo.classList.add("releasesCardInfo");
-  newReleaseTitle.textContent = "Title";
-  newReleaseDesc.textContent =
-    "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.";
-  newReleaseLink.textContent = "Releasing in 23H:34M:23S";
+  newReleaseTitle.textContent = newReleasesCollection[i].title;
+  newReleaseDesc.textContent = newReleasesCollection[i].desc;
+  newReleaseLink.textContent = `RELEASING IN ${newReleasesCollection[i].date}`;
   newRelease.appendChild(newReleaseImage);
   newRelease.appendChild(newReleaseInfo);
   newReleaseInfo.appendChild(newReleaseTitle);
