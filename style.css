@@ -183,6 +183,9 @@ header a:hover,
 .ReleasesCollection {
   display: flex;
   justify-content: flex-start;
+  align-self: flex-start;
+  flex-wrap: wrap;
+  margin-left: 3em;
 }
 
 #newReleases {
@@ -190,11 +193,49 @@ header a:hover,
 }
 
 .ReleasesCard {
-  height: 25em;
-  width: 20em;
-  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  height: 30em;
+  width: 25em;
+  background-color: #f6f6f6;
   border-radius: 0.8em;
   margin: 2em;
+}
+
+.ReleasesCard img {
+  height: 16em;
+  object-fit: cover;
+  border-top-right-radius: 1em;
+  border-top-left-radius: 1em;
+}
+
+.releasesCardInfo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.1em;
+}
+
+.releasesCardInfo h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-left: 0.8em;
+  margin-top: 0.8em;
+}
+.releasesCardInfo p {
+  margin-left: 1.5em;
+  margin-top: 0.5em;
+}
+.releasesCardInfo a {
+  align-self: center;
+  margin-top: 1.5em;
+  font-weight: bold;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 1em;
+  background-color: gray;
+  padding: 1em;
+  padding-left: 5em;
+  padding-right: 5em;
 }
 
 .Releases .arrows {
