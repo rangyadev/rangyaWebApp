@@ -168,7 +168,7 @@ header a:hover,
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-self: center;
+  align-items: center;
   margin-left: 6em;
 }
 .Releases h1 {
