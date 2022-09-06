@@ -131,13 +131,16 @@ for (let i = 0; i < numberOfCards; i++) {
   let newReleaseTitle = document.createElement("h2");
   let newReleaseDesc = document.createElement("p");
   let newReleaseLink = document.createElement("a");
+  //Adds Text via the Objects
   newReleaseImage.setAttribute("src", newReleasesCollection[i].image);
   newReleaseInfo.classList.add("releasesCardInfo");
   newReleaseTitle.textContent = newReleasesCollection[i].title;
   newReleaseDesc.textContent = newReleasesCollection[i].desc;
   newReleaseLink.textContent = `RELEASING IN ${newReleasesCollection[i].date}`;
+  //Appends the divs and image
   newRelease.appendChild(newReleaseImage);
   newRelease.appendChild(newReleaseInfo);
+  //Appends the info inside the div
   newReleaseInfo.appendChild(newReleaseTitle);
   newReleaseInfo.appendChild(newReleaseDesc);
   newReleaseInfo.appendChild(newReleaseLink);
