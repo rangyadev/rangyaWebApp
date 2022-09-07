@@ -103,19 +103,16 @@ let newReleasesCollection = [
     image: "assets/shoeItems/paranoise_1.jpg",
     title: "ParaNoise 2.0",
     desc: "G-Dragon x Nike",
-    date: "23H:34M:23S",
   },
   {
     image: "assets/shoeItems/kwondo_1.jpeg",
     title: "KWONDO 1",
     desc: "Peaceminusone x Nike",
-    date: "23H:34M:23S",
   },
   {
     image: "assets/shoeItems/DunkPanda_1.jpg",
     title: "White Black Panda",
     desc: "Nike Dunk Low Retro",
-    date: "23H:34M:23S",
   },
 ];
 let releasingSoonCollection = ["tite", "tite", "tite"];
@@ -136,7 +133,7 @@ for (let i = 0; i < numberOfCards; i++) {
   newReleaseInfo.classList.add("releasesCardInfo");
   newReleaseTitle.textContent = newReleasesCollection[i].title;
   newReleaseDesc.textContent = newReleasesCollection[i].desc;
-  newReleaseLink.textContent = `RELEASING IN ${newReleasesCollection[i].date}`;
+  newReleaseLink.textContent = `Buy Now`;
   //Appends the divs and image
   newRelease.appendChild(newReleaseImage);
   newRelease.appendChild(newReleaseInfo);
