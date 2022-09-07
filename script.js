@@ -211,30 +211,30 @@ for (let i = 0; i < numberOfCards; i++) {
   releasingSoon.classList.add("ReleasesCard");
   releasingSoons.appendChild(releasingSoon);
   //Add Info to the Cards
-  let newReleaseImage = document.createElement("img");
-  let newReleaseInfo = document.createElement("div");
-  let newReleaseTitle = document.createElement("h2");
-  let newReleaseDesc = document.createElement("p");
-  let newReleaseLink = document.createElement("a");
+  let releasingSoonImage = document.createElement("img");
+  let releasingSoonInfo = document.createElement("div");
+  let releasingSoonTitle = document.createElement("h2");
+  let releasingSoonDesc = document.createElement("p");
+  let releasingSoonLink = document.createElement("a");
   //Adds Text via the Objects
-  newReleaseImage.setAttribute(
+  releasingSoonImage.setAttribute(
     "src",
-    newReleasesCollection[newReleasingCollectionIndex].image
+    releasingSoonCollection[newReleasingCollectionIndex].image
   );
-  newReleaseInfo.classList.add("releasesCardInfo");
-  newReleaseTitle.textContent =
+  releasingSoonInfo.classList.add("releasesCardInfo");
+  releasingSoonTitle.textContent =
     releasingSoonCollection[newReleasingCollectionIndex].title;
-  newReleaseDesc.textContent =
+  releasingSoonDesc.textContent =
     releasingSoonCollection[newReleasingCollectionIndex].desc;
-  newReleaseLink.style.backgroundColor = "#06e666";
-  newReleaseLink.textContent = `Buy Now`;
+  releasingSoonLink.style.backgroundColor = "#06e666";
+  releasingSoonLink.textContent = `Buy Now`;
   //Appends the divs and image
-  releasingSoon.appendChild(newReleaseImage);
-  releasingSoon.appendChild(newReleaseInfo);
+  releasingSoon.appendChild(releasingSoonImage);
+  releasingSoon.appendChild(releasingSoonInfo);
   //Appends the info inside the div
-  newReleaseInfo.appendChild(newReleaseTitle);
-  newReleaseInfo.appendChild(newReleaseDesc);
-  newReleaseInfo.appendChild(newReleaseLink);
+  releasingSoonInfo.appendChild(releasingSoonTitle);
+  releasingSoonInfo.appendChild(releasingSoonDesc);
+  releasingSoonInfo.appendChild(releasingSoonLink);
 }
 
 //Add Arrow to the Right Side for New Releases
