@@ -9,7 +9,7 @@ This is a prototype web application created in partial fulfillment of our Grade 
 <strong>Contributor:</strong> Hanz Apo </br />
 
 <h2>Project Screenshots</h2>
-You can view the actual project at: http://rangya.shop
+You can view the actual project at: http://rangya.shop <br />
 
 <strong>Landing Page</strong>
 
