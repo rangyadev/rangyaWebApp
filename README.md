@@ -12,4 +12,4 @@ This is a prototype web application created in partial fulfillment of our Grade 
 You can view the actual project at: http://rangya.shop
 
 <h3>Landing Page</h3>
-![Landing Page](/readme/landingpage.png)
+![Landing Page](https://raw.githubusercontent.com/rangyadev/rangyaWebApp/main/readme/landingpage.png)
