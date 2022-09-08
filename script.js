@@ -226,8 +226,8 @@ for (let i = 0; i < numberOfCards; i++) {
     releasingSoonCollection[newReleasingCollectionIndex].title;
   releasingSoonDesc.textContent =
     releasingSoonCollection[newReleasingCollectionIndex].desc;
-  releasingSoonLink.style.backgroundColor = "#06e666";
-  releasingSoonLink.textContent = `Buy Now`;
+  releasingSoonLink.style.backgroundColor = "#808080";
+  releasingSoonLink.textContent = `Releasing in 12H:10M:08S`;
   //Appends the divs and image
   releasingSoon.appendChild(releasingSoonImage);
   releasingSoon.appendChild(releasingSoonInfo);
