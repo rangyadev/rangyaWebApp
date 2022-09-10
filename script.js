@@ -227,6 +227,7 @@ for (let i = 0; i < numberOfCards; i++) {
     releasingSoonCollection[newReleasingCollectionIndex].title;
   releasingSoonDesc.textContent =
     releasingSoonCollection[newReleasingCollectionIndex].desc;
+  releasingSoonLink.setAttribute("href", "");
   releasingSoonLink.style.backgroundColor = "#808080";
   releasingSoonLink.textContent = `Releasing in 10H:08M:08S`;
   //Appends the divs and image
