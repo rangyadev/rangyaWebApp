@@ -177,6 +177,7 @@ for (let i = 0; i < numberOfCards; i++) {
     newReleasesCollection[newReleasingCollectionIndex].title;
   newReleaseDesc.textContent =
     newReleasesCollection[newReleasingCollectionIndex].desc;
+  newReleaseLink.setAttribute("href", "");
   newReleaseLink.style.backgroundColor = "#06e666";
   newReleaseLink.textContent = `Buy Now`;
   //Appends the divs and image
