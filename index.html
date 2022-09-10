@@ -1,126 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Rangya</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-    />
-    <link href="resetCSS/reset.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
-    <link rel="icon" href="/assets/Logo/faviconWhite.ico" />
-  </head>
 
-  <body>
-    <div class="searchBar">
-      <div class="searchBarLogo">
-        <a href=""
-          ><img src="assets/Logo/rangyaWhite.png" alt="rangyaLogo"
-        /></a>
-      </div>
-      <div class="searchBarText">
-        <form>
-          <input type="text" name="searchResult" value="" />
-        </form>
-      </div>
-      <div class="closeSearchBar">
-        <ul>
-          <li>
-            <i class="bi bi-x-lg" id="closeSearchButton"></i>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <header>
-      <div class="headerLogo">
-        <a href=""
-          ><img src="assets/Logo/rangyaWhite.png" alt="rangyaLogo"
-        /></a>
-      </div>
-      <div class="headerInfo">
-        <ul>
-          <li><a href="">Buy</a></li>
-          <li><a href="">Sell</a></li>
-          <li><a href="">Trade</a></li>
-          <li><a href="">Consign</a></li>
-        </ul>
-      </div>
-      <div class="headerUserInfo">
-        <ul>
-          <li>
-            <i class="bi bi-search" id="searchButton"></i>
-          </li>
-          <li>
-            <a href=""><i class="bi bi-person-circle"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="bi bi-cart"></i></a>
-          </li>
-        </ul>
-      </div>
-    </header>
-    <div class="mainPage">
-      <img
-        src="assets/homePageBackground/shoeAnnouncement_1.jpg"
-        alt="background"
-        id="mainPageBackground"
-      />
-      <div class="mainContent">
-        <div class="arrows">
-          <i class="bi bi-caret-left" id="changePicBack"></i>
-        </div>
-        <div class="mainText">
-          <h1>Sneakys V2 is Out Now!</h1>
-          <p>Shop the newest version of the Sneakys Sneakers</p>
-          <div class="slideIndicators"></div>
-        </div>
-        <div class="arrows">
-          <i class="bi bi-caret-right" id="changePicNext"></i>
-        </div>
-      </div>
-    </div>
-    <div class="Releases">
-      <h1>New Releases</h1>
-      <div class="ReleasesCollection" id="newReleases">
-        <div class="arrows">
-          <i class="bi bi-caret-left" id="backNewReleases"></i>
-        </div>
-        <div class="releasesCards"></div>
-      </div>
-      <h1>Releasing Soon</h1>
-      <div class="ReleasesCollection" id="releasingSoon">
-        <div class="arrows">
-          <i class="bi bi-caret-left" id="backReleasingSoon"></i>
-        </div>
-      </div>
-    </div>
-    <div class="shoeViewer">
-      <img
-        src="assets/homePageBackground/shoeAnnouncement_1.jpg"
-        alt="background"
-        id="mainPageBackground"
-      />
-      <div class="shoeViewerContent">
-        <div class="arrows">
-          <i class="bi bi-caret-left" id="changePicBack"></i>
-        </div>
-        <div class="shoeViewerText">
-          <h1>Sneakys V2 is Out Now!</h1>
-          <p>Shop the newest version of the Sneakys Sneakers</p>
-        </div>
-        <div class="arrows">
-          <i class="bi bi-caret-right" id="changePicNext"></i>
-        </div>
-      </div>
-    </div>
-    <script src="script.js"></script>
-    <!-- Bootstrap JS Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+<head>
+	<title>Rangya</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+	<link href="resetCSS/reset.css" rel="stylesheet" />
+	<link href="style.css" rel="stylesheet" />
+	<link rel="icon" href="/assets/Logo/faviconWhite.ico" />
+</head>
+
+<body>
+	<div class="searchBar">
+		<div class="searchBarLogo">
+			<a href=""><img src="assets/Logo/rangyaWhite.png" alt="rangyaLogo" /></a>
+		</div>
+		<div class="searchBarText">
+			<form>
+				<input type="text" name="searchResult" value="" />
+			</form>
+		</div>
+		<div class="closeSearchBar">
+			<ul>
+				<li>
+					<i class="bi bi-x-lg" id="closeSearchButton"></i>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<header>
+		<div class="headerLogo">
+			<a href=""><img src="assets/Logo/rangyaWhite.png" alt="rangyaLogo" /></a>
+		</div>
+		<div class="headerInfo">
+			<ul>
+				<li><a href="">Buy</a></li>
+				<li><a href="">Sell</a></li>
+				<li><a href="">Trade</a></li>
+				<li><a href="">Consign</a></li>
+			</ul>
+		</div>
+		<div class="headerUserInfo">
+			<ul>
+				<li>
+					<i class="bi bi-search" id="searchButton"></i>
+				</li>
+				<li>
+					<a href=""><i class="bi bi-person-circle"></i></a>
+				</li>
+				<li>
+					<a href=""><i class="bi bi-cart"></i></a>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="mainPage">
+		<img src="assets/homePageBackground/shoeAnnouncement_1.jpg" alt="background" id="mainPageBackground" />
+		<div class="mainContent">
+			<div class="arrows">
+				<i class="bi bi-caret-left" id="changePicBack"></i>
+			</div>
+			<div class="mainText">
+				<h1>Sneakys V2 is Out Now!</h1>
+				<p>Shop the newest version of the Sneakys Sneakers</p>
+				<div class="slideIndicators"></div>
+			</div>
+			<div class="arrows">
+				<i class="bi bi-caret-right" id="changePicNext"></i>
+			</div>
+		</div>
+	</div>
+	<div class="Releases">
+		<h1>New Releases</h1>
+		<div class="ReleasesCollection" id="newReleases">
+			<div class="arrows">
+				<i class="bi bi-caret-left" id="backNewReleases"></i>
+			</div>
+			<div class="releasesCards"></div>
+		</div>
+		<h1>Releasing Soon</h1>
+		<div class="ReleasesCollection" id="releasingSoon">
+			<div class="arrows">
+				<i class="bi bi-caret-left" id="backReleasingSoon"></i>
+			</div>
+		</div>
+	</div>
+	<div class="shoeViewer">
+		<img src="assets/homePageBackground/shoeAnnouncement_1.jpg" alt="background" id="mainPageBackground" />
+		<div class="shoeViewerContent">
+			<div class="arrows">
+				<i class="bi bi-caret-left" id="changePicBack"></i>
+			</div>
+			<div class="shoeViewerText">
+				<h1>Checkers</h1>
+				<p>The best choice for attending online classes</p>
+			</div>
+			<div class="arrows">
+				<i class="bi bi-caret-right" id="changePicNext"></i>
+			</div>
+		</div>
+	</div>
+	<div class="Releases">
+		<h1>New Releases</h1>
+		<div class="ReleasesCollection" id="newReleases">
+			<div class="arrows">
+				<i class="bi bi-caret-left" id="backNewReleases"></i>
+			</div>
+			<div class="releasesCards"></div>
+		</div>
+		<h1>Releasing Soon</h1>
+		<div class="ReleasesCollection" id="releasingSoon">
+			<div class="arrows">
+				<i class="bi bi-caret-left" id="backReleasingSoon"></i>
+			</div>
+		</div>
+	</div>
+	<div class="cantFind">
+		<div class="cantFindSearchBar">
+			<i class="bi bi-search"></i>
+			<input type="text" name="cantFindSearch" value=""
+				placeholder="Can't find what you're looking for? Search it!" />
+		</div>
+	</div>
+	<script src="script.js"></script>
+	<!-- Bootstrap JS Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

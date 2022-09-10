@@ -251,7 +251,7 @@ header a:hover,
 
 /* Shoe Viewer*/
 .shoeViewer {
-  margin-bottom: 10em;
+  margin-bottom: 7em;
 }
 .shoeViewer img {
   position: absolute;
@@ -264,7 +264,6 @@ header a:hover,
 .shoeViewerContent {
   display: flex;
   justify-content: space-between;
-  text-align: center;
   align-items: center;
   color: white;
   height: 40em;
@@ -274,7 +273,6 @@ header a:hover,
   font-size: 2.5em;
   padding: 1em;
   float: left;
-  margin-top: 1em;
 }
 
 .shoeViewerContent .arrows:hover {
@@ -282,15 +280,28 @@ header a:hover,
 }
 
 .shoeViewerText {
-  margin-top: 24em;
+  text-align: left;
+  margin-top: 15em;
+  margin-right: 50em;
 }
-
+/**/
 .shoeViewerText h1 {
-  font-size: 4em;
+  font-size: 3em;
   font-weight: bold;
 }
 
 .shoeViewerText p {
   font-size: 2em;
-  padding: 0.5em;
+  padding-top: 0.3em;
+}
+
+/*Cant Find Search Bar*/
+.cantFind {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+}
+
+.cantFindSearchBar i {
+  position: absolute;
 }
