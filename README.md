@@ -11,6 +11,6 @@ This is a prototype web application created in partial fulfillment of our Grade 
 <h2>Project Screenshots</h2>
 You can view the actual project at: http://rangya.shop <br />
 
-<strong>Landing Page</strong>
+<h3>Landing Page</h3>
 
 ![LPAGE](readme/landingpage.png)

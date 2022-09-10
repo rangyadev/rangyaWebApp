@@ -248,3 +248,60 @@ header a:hover,
 .Releases .arrows:hover {
   opacity: 0.5;
 }
+
+/* Shoe Viewer*/
+.shoeViewer {
+  margin-bottom: 7em;
+}
+.shoeViewer img {
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  width: 100%;
+  height: 40em;
+  filter: brightness(80%);
+}
+.shoeViewerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  height: 40em;
+}
+
+.shoeViewerContent .arrows {
+  font-size: 2.5em;
+  padding: 1em;
+  float: left;
+}
+
+.shoeViewerContent .arrows:hover {
+  opacity: 0.8;
+}
+
+.shoeViewerText {
+  text-align: left;
+  margin-top: 15em;
+  margin-right: 50em;
+}
+/**/
+.shoeViewerText h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.shoeViewerText p {
+  font-size: 2em;
+  padding-top: 0.3em;
+}
+
+/*Cant Find Search Bar*/
+.cantFind {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+}
+
+.cantFindSearchBar i {
+  position: absolute;
+}
