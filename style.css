@@ -6,6 +6,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
 }
 
 /*Heeader*/
@@ -331,4 +332,44 @@ header a:hover,
   padding-bottom: 0.5em;
   padding-right: 0.5em;
   width: 25em;
+}
+
+/*Footer*/
+footer {
+  display: flex;
+  margin-top: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Arimo", sans-serif;
+  background-color: black;
+  color: white;
+  list-style-type: none;
+  padding: 5em;
+  margin-top: 4em;
+}
+
+footer img {
+  width: 10em;
+  padding-bottom: 1.5em;
+}
+footer a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 0.9em;
+  transition: 0.2s;
+}
+
+footer a:hover {
+  color: inherit;
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+footer li {
+  padding-bottom: 1.5em;
+}
+
+footer ul {
+  margin-left: 1.2em;
 }
