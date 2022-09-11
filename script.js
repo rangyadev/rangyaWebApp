@@ -252,6 +252,58 @@ nextReleasingSoon.setAttribute("id", "nextReleasingSoon");
 releasingSoons.appendChild(arrowContainerRS);
 arrowContainerRS.appendChild(nextReleasingSoon);
 
+
+//Create Limited Sizes 
+for (let i = 0; i < numberOfCards; i++) {
+  if (typeof releasingSoonCollection[i] == "undefined") continue;
+  newReleasingCollectionIndex = i;
+  //Creates Cards
+  let releasingSoon = document.createElement("div");
+  releasingSoon.classList.add("ReleasesCard");
+  releasingSoons.appendChild(releasingSoon);
+  //Add Info to the Cards
+  let releasingSoonImage = document.createElement("img");
+  let releasingSoonInfo = document.createElement("div");
+  let releasingSoonTitle = document.createElement("h2");
+  let releasingSoonDesc = document.createElement("p");
+  let releasingSoonLink = document.createElement("a");
+  //Adds Text via the Objects
+  releasingSoonImage.setAttribute(
+    "src",
+    releasingSoonCollection[newReleasingCollectionIndex].image
+  );
+  releasingSoonInfo.classList.add("releasesCardInfo");
+  releasingSoonTitle.textContent =
+    releasingSoonCollection[newReleasingCollectionIndex].title;
+  releasingSoonDesc.textContent =
+    releasingSoonCollection[newReleasingCollectionIndex].desc;
+  releasingSoonLink.setAttribute("href", "");
+  releasingSoonLink.style.backgroundColor = "#808080";
+  releasingSoonLink.textContent = `Releasing in 10H:08M:08S`;
+  //Appends the divs and image
+  releasingSoon.appendChild(releasingSoonImage);
+  releasingSoon.appendChild(releasingSoonInfo);
+  //Appends the info inside the div
+  releasingSoonInfo.appendChild(releasingSoonTitle);
+  releasingSoonInfo.appendChild(releasingSoonDesc);
+  releasingSoonInfo.appendChild(releasingSoonLink);
+}
+
+//Add Arrow to the Right Side for New Releases
+//Create Arrow
+let nextReleasingSoon = document.createElement("i");
+let arrowContainerRS = document.createElement("div");
+//Add Classess
+arrowContainerRS.classList.add("arrows");
+nextReleasingSoon.classList.add("bi");
+nextReleasingSoon.classList.add("bi-caret-right");
+nextReleasingSoon.setAttribute("id", "nextReleasingSoon");
+
+releasingSoons.appendChild(arrowContainerRS);
+arrowContainerRS.appendChild(nextReleasingSoon);
+
+
+
 //Change Collection Index
 //New Releasing
 nextNewReleases.addEventListener("click", () => {
