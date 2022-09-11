@@ -92,7 +92,7 @@ closeSearchBar.addEventListener("click", () => {
   searchBar.classList.add("searchBarHidden");
 });
 
-//Releases Cards
+//Number of Cards
 let numberOfCards = 3;
 
 //Releases Cards
@@ -203,10 +203,12 @@ nextNewReleases.setAttribute("id", "nextNewReleases");
 newReleases.appendChild(arrowContainerNR);
 arrowContainerNR.appendChild(nextNewReleases);
 
+let releasingSoonCollectionIndex = 0;
+
 //Create Releasing Soon
 for (let i = 0; i < numberOfCards; i++) {
   if (typeof releasingSoonCollection[i] == "undefined") continue;
-  newReleasingCollectionIndex = i;
+  releasingSoonCollectionIndex = i;
   //Creates Cards
   let releasingSoon = document.createElement("div");
   releasingSoon.classList.add("ReleasesCard");
@@ -220,13 +222,13 @@ for (let i = 0; i < numberOfCards; i++) {
   //Adds Text via the Objects
   releasingSoonImage.setAttribute(
     "src",
-    releasingSoonCollection[newReleasingCollectionIndex].image
+    releasingSoonCollection[releasingSoonCollectionIndex].image
   );
   releasingSoonInfo.classList.add("releasesCardInfo");
   releasingSoonTitle.textContent =
-    releasingSoonCollection[newReleasingCollectionIndex].title;
+    releasingSoonCollection[releasingSoonCollectionIndex].title;
   releasingSoonDesc.textContent =
-    releasingSoonCollection[newReleasingCollectionIndex].desc;
+    releasingSoonCollection[releasingSoonCollectionIndex].desc;
   releasingSoonLink.setAttribute("href", "");
   releasingSoonLink.style.backgroundColor = "#808080";
   releasingSoonLink.textContent = `Releasing in 10H:08M:08S`;
@@ -252,15 +254,21 @@ nextReleasingSoon.setAttribute("id", "nextReleasingSoon");
 releasingSoons.appendChild(arrowContainerRS);
 arrowContainerRS.appendChild(nextReleasingSoon);
 
+//Limited Sizes and Discount Cards
+let limitedSizes = document.querySelector("#limitedSizes");
+let discountedRangyaPay = document.querySelector("#discountedRangyaPay");
+let limitedSizesCollection = [];
+let discountedRangyaPayCollection = [];
 
-//Create Limited Sizes 
+let limitedSizesCollectionIndex = o;
+//Create Limited Sizes
 for (let i = 0; i < numberOfCards; i++) {
-  if (typeof releasingSoonCollection[i] == "undefined") continue;
-  newReleasingCollectionIndex = i;
+  if (typeof limitedSizesCollection[i] == "undefined") continue;
+  limitedSizesCollectionIndex = i;
   //Creates Cards
-  let releasingSoon = document.createElement("div");
-  releasingSoon.classList.add("ReleasesCard");
-  releasingSoons.appendChild(releasingSoon);
+  let limitedSize = document.createElement("div");
+  limitedSize.classList.add("sizeDiscoutnsCard");
+  limitedSizes.appendChild(limitedSize);
   //Add Info to the Cards
   let releasingSoonImage = document.createElement("img");
   let releasingSoonInfo = document.createElement("div");
@@ -301,8 +309,6 @@ nextReleasingSoon.setAttribute("id", "nextReleasingSoon");
 
 releasingSoons.appendChild(arrowContainerRS);
 arrowContainerRS.appendChild(nextReleasingSoon);
-
-
 
 //Change Collection Index
 //New Releasing
