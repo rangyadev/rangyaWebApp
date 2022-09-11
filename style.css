@@ -11,6 +11,11 @@ body {
 /*Heeader*/
 header {
   display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -82,6 +87,11 @@ header a:hover,
 /*Search Bar*/
 .searchBar {
   display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
