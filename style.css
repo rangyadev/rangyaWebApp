@@ -305,3 +305,8 @@ header a:hover,
 .cantFindSearchBar i {
   position: absolute;
 }
+
+.cantFindSearchBar input {
+  border-radius: 2em;
+  width: 100%;
+}
