@@ -122,9 +122,15 @@ let newReleasesCollection = [
     price: 20000,
   },
   {
-    image: "assets/shoeItems/DunkPanda_1.jpg",
-    title: "Dunk Low Panda",
-    desc: "Nike Dunk Low Retro",
+    image: "assets/shoeItems/paranoise_1.jpg",
+    title: "ParaNoise 2.0",
+    desc: "G-Dragon x Nike",
+    price: 20000,
+  },
+  {
+    image: "assets/shoeItems/kwondo_1.jpeg",
+    title: "KWONDO 1",
+    desc: "Peaceminusone x Nike",
     price: 20000,
   },
   {
@@ -154,9 +160,15 @@ let releasingSoonCollection = [
     price: 20000,
   },
   {
-    image: "assets/shoeItems/DunkPanda_1.jpg",
-    title: "Dunk Low Panda",
-    desc: "Nike Dunk Low Retro",
+    image: "assets/shoeItems/paranoise_1.jpg",
+    title: "ParaNoise 2.0",
+    desc: "G-Dragon x Nike",
+    price: 20000,
+  },
+  {
+    image: "assets/shoeItems/kwondo_1.jpeg",
+    title: "KWONDO 1",
+    desc: "Peaceminusone x Nike",
     price: 20000,
   },
   {
@@ -446,6 +458,23 @@ arrowContainerDRP.appendChild(nextDiscountedRangyaPay);
 // //Change Collection Index
 //New Releasing
 nextNewReleases.addEventListener("click", () => {
-  newReleasingCollectionIndex++;
-  for (let i = 0; i < newReleasesCollection.length; i++) {}
+  let card = document
+    .getElementById("newReleases")
+    .querySelectorAll(".ReleasesCard");
+  for (let i = 0; i < newReleasesCollection.length; i++) {
+    card[i]
+      .querySelector("img")
+      .setAttribute(
+        "src",
+        newReleasesCollection[newReleasingCollectionIndex + 1].image
+      );
+    card[i].querySelector("h2").textContent =
+      newReleasesCollection[newReleasingCollectionIndex + 1].title;
+    card[i].querySelector("p").textContent =
+      newReleasesCollection[newReleasingCollectionIndex + 1].desc;
+    card[i].querySelector("a").setAttribute("href", "");
+    card[i].querySelector(
+      "a"
+    ).textContent = `₱${newReleasesCollection[newReleasingCollectionIndex].price}`;
+  }
 });
