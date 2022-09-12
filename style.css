@@ -306,35 +306,7 @@ header a:hover,
   padding-top: 0.3em;
 }
 
-/*Cant Find Search Bar*/
-.cantFind {
-  display: flex;
-  justify-content: center;
-  margin: 2em;
-}
-
-.cantFindSearchBar i {
-  position: absolute;
-  font-size: 2em;
-  margin: 0.3em;
-  margin-left: 0.8em;
-  font-weight: bold;
-  padding-top: 0.3em;
-  padding-bottom: 0.5em;
-}
-
-.cantFindSearchBar input {
-  border-radius: 2em;
-  border: 2px solid black;
-  font-size: 1.7em;
-  padding-left: 2.8em;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  padding-right: 0.5em;
-  width: 25em;
-}
-
-/* Realease*/
+/*Sizes and Discounts*/
 .sizesDiscounts {
   margin: 5em;
   display: flex;
@@ -419,6 +391,37 @@ header a:hover,
 
 .sizesDiscounts .arrows:hover {
   opacity: 0.5;
+}
+
+/*Cant Find Search Bar*/
+.cantFind {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+  margin-top: 8em;
+  margin-bottom: 5em;
+}
+
+.cantFindSearchBar i {
+  position: absolute;
+  font-size: 2.3em;
+  margin: 0.3em;
+  margin-left: 0.8em;
+  font-weight: bold;
+  padding-top: 0.3em;
+  padding-bottom: 0.5em;
+  padding-right: 3em;
+}
+
+.cantFindSearchBar input {
+  border-radius: 2em;
+  border: 2px solid black;
+  font-size: 2em;
+  padding-left: 2.8em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-right: 0.5em;
+  width: 25em;
 }
 
 /*Footer*/
