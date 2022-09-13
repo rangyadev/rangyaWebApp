@@ -455,26 +455,33 @@ nextDiscountedRangyaPay.setAttribute("id", "nextReleasingSoon");
 discountedRangyaPays.appendChild(arrowContainerDRP);
 arrowContainerDRP.appendChild(nextDiscountedRangyaPay);
 
-// //Change Collection Index
+//Change Collection Index
 //New Releasing
+newReleasingCollectionIndex = 0;
 nextNewReleases.addEventListener("click", () => {
+  newReleasingCollectionIndex++;
   let card = document
     .getElementById("newReleases")
     .querySelectorAll(".ReleasesCard");
-  for (let i = 0; i < newReleasesCollection.length; i++) {
+  for (let i = 0; i < numberOfCards; i++) {
+    console.log(newReleasingCollectionIndex);
+    newReleasingCollectionIndex++;
     card[i]
       .querySelector("img")
       .setAttribute(
         "src",
-        newReleasesCollection[newReleasingCollectionIndex + 1].image
+        newReleasesCollection[newReleasingCollectionIndex].image
       );
     card[i].querySelector("h2").textContent =
-      newReleasesCollection[newReleasingCollectionIndex + 1].title;
+      newReleasesCollection[newReleasingCollectionIndex].title;
     card[i].querySelector("p").textContent =
-      newReleasesCollection[newReleasingCollectionIndex + 1].desc;
+      newReleasesCollection[newReleasingCollectionIndex].desc;
     card[i].querySelector("a").setAttribute("href", "");
     card[i].querySelector(
       "a"
     ).textContent = `₱${newReleasesCollection[newReleasingCollectionIndex].price}`;
+    console.log(newReleasingCollectionIndex);
   }
+  newReleasingCollectionIndex = 0;
 });
+console.log(newReleasingCollectionIndex);
