@@ -463,3 +463,10 @@ footer li {
 footer ul {
   margin-left: 1.2em;
 }
+
+/*for Mobile*/
+/* @media screen and (max-width: 600px) { */
+/*   header { */
+/*     position: unset; */
+/*   } */
+/* } */
