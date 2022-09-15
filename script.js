@@ -140,54 +140,51 @@ let newReleasesCollection = [
     price: 20000,
   },
 ];
-let releaseDateCollection = [
-  new Date("August 28, 2023"),
-  new Date("October 24, 2023"),
-];
+
 let releasingSoonCollection = [
   {
     image: "assets/shoeItems/paranoise_1.jpg",
     title: "ParaNoise 2.0",
     desc: "G-Dragon x Nike",
-    days: releaseDateCollection[0].getDate(),
     price: 20000,
+    days: new Date("09/30/2022"),
   },
   {
     image: "assets/shoeItems/kwondo_1.jpeg",
     title: "KWONDO 1",
     desc: "Peaceminusone x Nike",
-    days: releaseDateCollection[0].getDate(),
     price: 20000,
+    days: new Date("11/30/2022"),
   },
   {
     image: "assets/shoeItems/DunkPanda_1.jpg",
     title: "Dunk Low Panda",
     desc: "Nike Dunk Low Retro",
-    days: releaseDateCollection[0].getDate(),
     price: 20000,
+    days: new Date("01/30/2023"),
   },
   {
     image: "assets/shoeItems/paranoise_1.jpg",
     title: "ParaNoise 2.0",
     desc: "G-Dragon x Nike",
-    days: releaseDateCollection[0].getDate(),
     price: 20000,
+    days: new Date("12/30/2022"),
   },
   {
     image: "assets/shoeItems/kwondo_1.jpeg",
     title: "KWONDO 1",
     desc: "Peaceminusone x Nike",
-    days: releaseDateCollection[0].getDate(),
     price: 20000,
+    days: new Date("10/30/2022"),
   },
   {
     image: "assets/shoeItems/DunkPanda_1.jpg",
     title: "Dunk Low Panda",
-    desc: "Nike Dunk Low Retro",
-    days: releaseDateCollection[0].getDate(),
     price: 20000,
+    days: new Date("10/30/2022"),
   },
 ];
+
 //Create New Releases
 for (let i = 0; i < numberOfCards; i++) {
   if (typeof newReleasesCollection[i] == "undefined") continue;
@@ -265,9 +262,18 @@ for (let i = 0; i < numberOfCards; i++) {
   cardLink.setAttribute("href", "");
   cardLink.style.backgroundColor = "#808080";
   let currentDate = new Date();
-  let currentDay = currentDate.getDate();
-  let remainingDays = currentDay;
-  cardLink.textContent = `Releasing in ${remainingDays}`;
+  let currentTime = currentDate.getTime();
+  let releaseDate =
+    releasingSoonCollection[releasingSoonCollectionIndex].days.getTime();
+  let remainingDays = releaseDate - currentTime;
+  let remainingTime = Math.round(remainingDays / (1000 * 3600 * 24));
+  if (remainingTime === 1) {
+    cardLink.textContent = `Releasing in ${remainingTime} Day`;
+  } else if (remainingTime <= 0) {
+    cardLink.textContent = `₱${releasingSoonCollection[releasingSoonCollectionIndex].price}`;
+  } else {
+    cardLink.textContent = `Releasing in ${remainingTime} Days`;
+  }
   //Appends the divs and image
   card.appendChild(cardImage);
   card.appendChild(cardInfo);
