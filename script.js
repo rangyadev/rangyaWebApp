@@ -184,15 +184,16 @@ let releasingSoonCollection = [
     days: new Date("10/30/2022"),
   },
 ];
+let newReleaseCards = [];
+let releasingSoonCards = [];
 
-//Create New Releases
-for (let i = 0; i < numberOfCards; i++) {
+//Create New Releases Cards
+for (let i = 0; i < newReleasesCollection.length; i++) {
   if (typeof newReleasesCollection[i] == "undefined") continue;
   newReleasingCollectionIndex = i;
   //Creates Cards
   let card = document.createElement("div");
   card.classList.add("ReleasesCard");
-  newReleases.appendChild(card);
   //Add Info to the Cards
   let cardImage = document.createElement("img");
   let cardInfo = document.createElement("div");
@@ -219,8 +220,16 @@ for (let i = 0; i < numberOfCards; i++) {
   cardInfo.appendChild(cardTitle);
   cardInfo.appendChild(cardDesc);
   cardInfo.appendChild(cardLink);
+  //Add to Array
+  newReleaseCards.push(card);
 }
 
+//Append to Parent Div
+for (let i = 0; i < numberOfCards; i++) {
+  newReleases.appendChild(newReleaseCards[i]);
+}
+
+console.log(newReleaseCards);
 //Add Arrow to the Right Side for New Releases
 //Create Arrow
 let nextNewReleases = document.createElement("i");
@@ -478,27 +487,5 @@ arrowContainerDRP.appendChild(nextDiscountedRangyaPay);
 //New Releasing
 newReleasingCollectionIndex = 0;
 nextNewReleases.addEventListener("click", () => {
-  newReleasingCollectionIndex++;
-  let card = document
-    .getElementById("newReleases")
-    .querySelectorAll(".ReleasesCard");
-  newReleasingCollectionIndex++;
-  for (let i = 0; i < card.length; i++) {
-    card[i]
-      .querySelector("img")
-      .setAttribute(
-        "src",
-        newReleasesCollection[newReleasingCollectionIndex].image
-      );
-    card[i].querySelector("h2").textContent =
-      newReleasesCollection[newReleasingCollectionIndex].title;
-    card[i].querySelector("p").textContent =
-      newReleasesCollection[newReleasingCollectionIndex].desc;
-    card[i].querySelector("a").setAttribute("href", "");
-    card[i].querySelector(
-      "a"
-    ).textContent = `₱${newReleasesCollection[newReleasingCollectionIndex].price}`;
-    console.log(newReleasingCollectionIndex);
-  }
-  newReleasingCollectionIndex = 0;
+  console.log(newReleases.children);
 });
