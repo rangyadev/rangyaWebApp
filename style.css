@@ -196,6 +196,12 @@ header a:hover,
   margin-left: 3em;
   overflow-x: auto;
   white-space: nowrap;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.cardCollection::-webkit-scrollbar {
+  display: none;
 }
 
 #newReleases {
