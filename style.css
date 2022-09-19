@@ -195,6 +195,7 @@ header a:hover,
   flex-wrap: nowrap;
   margin-left: 3em;
   overflow-x: auto;
+  white-space: nowrap;
 }
 
 #newReleases {
