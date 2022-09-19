@@ -173,37 +173,50 @@ header a:hover,
   margin: 0.5em;
 }
 
-/* Realease*/
-.Releases {
-  margin: 5em;
+/*Cards*/
+.Cards {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-left: 6em;
 }
-.Releases h1 {
+.cardCollectionTitles {
   display: flex;
   justify-content: flex-start;
   font-weight: bold;
   font-size: 2.5em;
   align-self: flex-start;
   margin-left: 3em;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
 }
 
-.ReleasesCollection {
+.cardCollection {
   display: flex;
   justify-content: flex-start;
   align-self: flex-start;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-left: 3em;
+  overflow-x: auto;
 }
 
 #newReleases {
+  margin-bottom: 3em;
+}
+#releasingSoon {
   margin-bottom: 6em;
 }
 
-.ReleasesCard {
+#limitedSizes {
+  margin-bottom: 6em;
+}
+
+.cardContainer {
+  display: flex;
+}
+
+.cardContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.Card {
   display: flex;
   flex-direction: column;
   height: 32em;
@@ -211,32 +224,33 @@ header a:hover,
   background-color: #f6f6f6;
   border-radius: 0.8em;
   margin: 2em;
+  filter: drop-shadow(5px 10px 5px rgba(0, 0, 0, 0.3));
 }
 
-.ReleasesCard img {
+.Card img {
   height: 20em;
   object-fit: cover;
   border-top-right-radius: 1em;
   border-top-left-radius: 1em;
 }
 
-.releasesCardInfo {
+.CardInfo {
   display: flex;
   flex-direction: column;
   margin-top: 0.1em;
 }
 
-.releasesCardInfo h2 {
+.CardInfo h2 {
   font-size: 2em;
   font-weight: bold;
   margin-left: 0.7em;
   margin-top: 0.8em;
 }
-.releasesCardInfo p {
+.CardInfo p {
   margin-left: 1.5em;
   margin-top: 1em;
 }
-.releasesCardInfo a {
+.CardInfo a {
   align-self: center;
   margin-top: 2em;
   font-weight: bold;
@@ -249,15 +263,23 @@ header a:hover,
   padding-right: 5em;
 }
 
-.Releases .arrows {
+.cardArrows {
   font-size: 2.5em;
   color: black;
   position: relative;
   align-self: center;
 }
 
-.Releases .arrows:hover {
+.cardArrows:hover {
   opacity: 0.5;
+}
+
+.leftArrows {
+  margin-left: 1em;
+}
+.rightArrows {
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 /* Shoe Viewer*/
@@ -304,93 +326,6 @@ header a:hover,
 .shoeViewerText p {
   font-size: 2em;
   padding-top: 0.3em;
-}
-
-/*Sizes and Discounts*/
-.sizesDiscounts {
-  margin: 5em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-left: 6em;
-}
-.sizesDiscounts h1 {
-  display: flex;
-  justify-content: flex-start;
-  font-weight: bold;
-  font-size: 2.5em;
-  align-self: flex-start;
-  margin-left: 3em;
-}
-
-.sizesDiscountsCollection {
-  display: flex;
-  justify-content: flex-start;
-  align-self: flex-start;
-  flex-wrap: wrap;
-  margin-left: 3em;
-}
-
-#limitedSizes {
-  margin-bottom: 6em;
-}
-
-.sizesDiscountsCard {
-  display: flex;
-  flex-direction: column;
-  height: 32em;
-  width: 27em;
-  background-color: #f6f6f6;
-  border-radius: 0.8em;
-  margin: 2em;
-}
-
-.sizesDiscountsCard img {
-  height: 20em;
-  object-fit: cover;
-  border-top-right-radius: 1em;
-  border-top-left-radius: 1em;
-}
-
-.sizesDiscountsCardInfo {
-  display: flex;
-  flex-direction: column;
-  margin-top: 0.1em;
-}
-
-.sizesDiscountsCardInfo h2 {
-  font-size: 2em;
-  font-weight: bold;
-  margin-left: 0.7em;
-  margin-top: 0.8em;
-}
-.sizesDiscountsCardInfo p {
-  margin-left: 1.5em;
-  margin-top: 1em;
-}
-.sizesDiscountsCardInfo a {
-  align-self: center;
-  margin-top: 2em;
-  font-weight: bold;
-  color: inherit;
-  text-decoration: none;
-  border-radius: 1em;
-  background-color: gray;
-  padding: 1em;
-  padding-left: 5em;
-  padding-right: 5em;
-}
-
-.sizesDiscounts .arrows {
-  font-size: 2.5em;
-  color: black;
-  position: relative;
-  align-self: center;
-}
-
-.sizesDiscounts .arrows:hover {
-  opacity: 0.5;
 }
 
 /*Cant Find Search Bar*/
