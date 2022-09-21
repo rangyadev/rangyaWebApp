@@ -147,7 +147,7 @@ let releasingSoonCollection = [
     title: "ParaNoise 2.0",
     desc: "G-Dragon x Nike",
     price: 20000,
-    days: new Date("09/30/2022"),
+    days: new Date("09/22/2022"),
   },
   {
     image: "assets/shoeItems/kwondo_1.jpeg",
