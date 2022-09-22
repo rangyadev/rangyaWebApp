@@ -472,3 +472,46 @@ document
       .querySelector("#discountedRangyaPays")
       .scrollBy({ left: scrollAmount, behavior: "smooth" });
   });
+
+//Change Shoe Viewer Background
+////Shoe Viewer Components
+let shoeViewerBackground = document.querySelector("#shoeViewerBackground");
+let changeShoeBack = document.querySelector("#changeShoeBack");
+let changeShoeNext = document.querySelector("#changeShoeNext");
+//Background Components
+let shoeViewerIndex = 0;
+let shoeViewerCollection = [
+  "assets/homePageBackground/shoeAnnouncement_1.jpg",
+  "assets/homePageBackground/shoeAnnouncement_2.jpg",
+  "assets/homePageBackground/shoeAnnouncement_3.jpg",
+  "assets/homePageBackground/shoeAnnouncement_4.jpg",
+  "assets/homePageBackground/shoeAnnouncement_5.jpg",
+];
+
+//Set Background on Load
+shoeViewerBackground.src = shoeViewerCollection[shoeViewerIndex];
+
+//Changes Picture When Arrow is Clicked
+//Previous Picture
+changeShoeBack.addEventListener("click", () => {
+  if (shoeViewerIndex > 0) {
+    shoeViewerIndex--;
+  } else {
+    shoeViewerIndex = shoeViewerCollection.length - 1;
+  }
+  changeShoePicture();
+});
+
+//Next Picture
+changeShoeNext.addEventListener("click", () => {
+  if (shoeViewerIndex < shoeViewerCollection.length - 1) {
+    shoeViewerIndex++;
+  } else {
+    shoeViewerIndex = 0;
+  }
+  changeShoePicture();
+});
+
+function changeShoePicture() {
+  shoeViewerBackground.src = shoeViewerCollection[shoeViewerIndex];
+}
