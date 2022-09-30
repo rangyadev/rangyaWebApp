@@ -66,7 +66,7 @@ setInterval(function () {
     mainPagePictureIndex = 0;
   }
   changePicture();
-}, 6000);
+}, 12000);
 
 //Enable Search Bar
 let searchButton = document.querySelector("#searchButton");
@@ -107,37 +107,37 @@ let newReleasesCollection = [
     image: "assets/shoeItems/paranoise_1.jpg",
     title: "ParaNoise 2.0",
     desc: "G-Dragon x Nike",
-    price: 20000,
+    price: 25000,
   },
   {
     image: "assets/shoeItems/kwondo_1.jpeg",
     title: "KWONDO 1",
     desc: "Peaceminusone x Nike",
-    price: 20000,
+    price: 24000,
   },
   {
     image: "assets/shoeItems/DunkPanda_1.jpg",
     title: "Dunk Low Panda",
     desc: "Nike Dunk Low Retro",
-    price: 20000,
+    price: 18000,
   },
   {
     image: "assets/shoeItems/paranoise_1.jpg",
     title: "ParaNoise 2.0",
     desc: "G-Dragon x Nike",
-    price: 20000,
+    price: 36000,
   },
   {
     image: "assets/shoeItems/kwondo_1.jpeg",
     title: "KWONDO 1",
     desc: "Peaceminusone x Nike",
-    price: 20000,
+    price: 17000,
   },
   {
     image: "assets/shoeItems/DunkPanda_1.jpg",
     title: "Dunk Low Panda",
     desc: "Nike Dunk Low Retro",
-    price: 20000,
+    price: 31000,
   },
 ];
 
