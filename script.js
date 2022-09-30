@@ -59,7 +59,6 @@ function changePicture() {
 }
 
 //
-<<<<<<< HEAD
 setInterval(function() {
 	if (mainPagePictureIndex < mainPicBackgroundCollection.length - 1) {
 		mainPagePictureIndex++;
@@ -68,16 +67,14 @@ setInterval(function() {
 	}
 	changePicture();
 }, 6000);
-=======
-setInterval(function () {
-  if (mainPagePictureIndex < mainPicBackgroundCollection.length - 1) {
-    mainPagePictureIndex++;
-  } else {
-    mainPagePictureIndex = 0;
-  }
-  changePicture();
+setInterval(function() {
+	if (mainPagePictureIndex < mainPicBackgroundCollection.length - 1) {
+		mainPagePictureIndex++;
+	} else {
+		mainPagePictureIndex = 0;
+	}
+	changePicture();
 }, 12000);
->>>>>>> 0ebf4480e9d7db87a3d01ea9b5d32ee57a027de7
 
 //Enable Search Bar
 let searchButton = document.querySelector("#searchButton");
@@ -114,7 +111,6 @@ let newReleasingCollectionIndex = 0,
 let newReleases = document.querySelector("#newReleases");
 let releasingSoons = document.querySelector("#releasingSoon");
 let newReleasesCollection = [
-<<<<<<< HEAD
 	{
 		image: "assets/shoeItems/paranoise_1.jpg",
 		title: "ParaNoise 2.0",
@@ -151,44 +147,42 @@ let newReleasesCollection = [
 		desc: "Nike Dunk Low Retro",
 		price: 20000,
 	},
-=======
-  {
-    image: "assets/shoeItems/paranoise_1.jpg",
-    title: "ParaNoise 2.0",
-    desc: "G-Dragon x Nike",
-    price: 25000,
-  },
-  {
-    image: "assets/shoeItems/kwondo_1.jpeg",
-    title: "KWONDO 1",
-    desc: "Peaceminusone x Nike",
-    price: 24000,
-  },
-  {
-    image: "assets/shoeItems/DunkPanda_1.jpg",
-    title: "Dunk Low Panda",
-    desc: "Nike Dunk Low Retro",
-    price: 18000,
-  },
-  {
-    image: "assets/shoeItems/paranoise_1.jpg",
-    title: "ParaNoise 2.0",
-    desc: "G-Dragon x Nike",
-    price: 36000,
-  },
-  {
-    image: "assets/shoeItems/kwondo_1.jpeg",
-    title: "KWONDO 1",
-    desc: "Peaceminusone x Nike",
-    price: 17000,
-  },
-  {
-    image: "assets/shoeItems/DunkPanda_1.jpg",
-    title: "Dunk Low Panda",
-    desc: "Nike Dunk Low Retro",
-    price: 31000,
-  },
->>>>>>> 0ebf4480e9d7db87a3d01ea9b5d32ee57a027de7
+	{
+		image: "assets/shoeItems/paranoise_1.jpg",
+		title: "ParaNoise 2.0",
+		desc: "G-Dragon x Nike",
+		price: 25000,
+	},
+	{
+		image: "assets/shoeItems/kwondo_1.jpeg",
+		title: "KWONDO 1",
+		desc: "Peaceminusone x Nike",
+		price: 24000,
+	},
+	{
+		image: "assets/shoeItems/DunkPanda_1.jpg",
+		title: "Dunk Low Panda",
+		desc: "Nike Dunk Low Retro",
+		price: 18000,
+	},
+	{
+		image: "assets/shoeItems/paranoise_1.jpg",
+		title: "ParaNoise 2.0",
+		desc: "G-Dragon x Nike",
+		price: 36000,
+	},
+	{
+		image: "assets/shoeItems/kwondo_1.jpeg",
+		title: "KWONDO 1",
+		desc: "Peaceminusone x Nike",
+		price: 17000,
+	},
+	{
+		image: "assets/shoeItems/DunkPanda_1.jpg",
+		title: "Dunk Low Panda",
+		desc: "Nike Dunk Low Retro",
+		price: 31000,
+	},
 ];
 
 let releasingSoonCollection = [
