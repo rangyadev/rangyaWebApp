@@ -6,11 +6,6 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  overflow-x: hidden;
-  width: 100%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   min-height: 100vh;
 }
 
@@ -83,6 +78,7 @@ header a:hover,
 
 .headerInfo ul {
   letter-spacing: 0.25em;
+  flex-wrap: wrap;
 }
 
 .headerInfo li :hover {
@@ -133,6 +129,7 @@ header a:hover,
 }
 .mainContent {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
   align-items: center;
@@ -143,7 +140,6 @@ header a:hover,
 .mainContent .arrows {
   font-size: 2.5em;
   padding: 1em;
-  float: left;
 }
 
 .mainContent .arrows:hover {
@@ -311,7 +307,9 @@ header a:hover,
 .shoeViewerContent {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
+  text-align: center;
   color: white;
   height: 40em;
 }
@@ -319,7 +317,6 @@ header a:hover,
 .shoeViewerContent .arrows {
   font-size: 2.5em;
   padding: 1em;
-  float: left;
 }
 
 .shoeViewerContent .arrows:hover {
@@ -329,7 +326,6 @@ header a:hover,
 .shoeViewerText {
   text-align: left;
   margin-top: 15em;
-  margin-right: 50em;
 }
 /**/
 .shoeViewerText h1 {
@@ -369,8 +365,7 @@ header a:hover,
   padding-left: 2.8em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  padding-right: 0.5em;
-  width: 25em;
+  width: 100%;
 }
 
 /*Footer*/
@@ -414,8 +409,5 @@ footer ul {
 }
 
 /*for Mobile*/
-/* @media screen and (max-width: 600px) { */
-/*   header { */
-/*     position: unset; */
-/*   } */
-/* } */
+@media only screen and (max-width: 600px) {
+}
