@@ -128,11 +128,15 @@ header a:hover,
   filter: brightness(80%);
 }
 .mainContent {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  text-align: center;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
   align-items: center;
+  grid-gap: 2em;
+  text-align: center;
   color: white;
   height: 55em;
 }
@@ -146,8 +150,12 @@ header a:hover,
   opacity: 0.8;
 }
 
-/* .mainText { */
-/* } */
+#changePicNext {
+  justify-self: end;
+}
+
+.mainText {
+}
 
 .mainText h1 {
   font-size: 4em;
@@ -180,13 +188,17 @@ header a:hover,
   align-items: center;
   justify-content: center;
 }
+
+.cardCollector {
+  overflow-x: auto;
+}
 .cardCollectionTitles {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-self: flex-start;
   align-self: flex-start;
   font-weight: bold;
   font-size: 2.5em;
-  margin-left: 3em;
   margin-top: 2em;
   margin-bottom: 0.5em;
 }
