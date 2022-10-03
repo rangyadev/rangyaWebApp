@@ -150,6 +150,7 @@ let newReleasesCollection = [
 ];
 
 let releasingSoonCollection = [
+<<<<<<< Updated upstream
 	{
 		image: "assets/shoeItems/paranoise_1.jpg",
 		title: "ParaNoise 2.0",
@@ -192,6 +193,50 @@ let releasingSoonCollection = [
 		price: 20000,
 		days: new Date("10/30/2022"),
 	},
+=======
+  {
+    image: "assets/shoeItems/paranoise_1.jpg",
+    title: "ParaNoise 2.0",
+    desc: "G-Dragon x Nike",
+    price: 20000,
+    days: new Date("10/14/2022"),
+  },
+  {
+    image: "assets/shoeItems/kwondo_1.jpeg",
+    title: "KWONDO 1",
+    desc: "Peaceminusone x Nike",
+    price: 20000,
+    days: new Date("11/30/2022"),
+  },
+  {
+    image: "assets/shoeItems/DunkPanda_1.jpg",
+    title: "Dunk Low Panda",
+    desc: "Nike Dunk Low Retro",
+    price: 20000,
+    days: new Date("01/30/2023"),
+  },
+  {
+    image: "assets/shoeItems/paranoise_1.jpg",
+    title: "ParaNoise 2.0",
+    desc: "G-Dragon x Nike",
+    price: 20000,
+    days: new Date("12/30/2022"),
+  },
+  {
+    image: "assets/shoeItems/kwondo_1.jpeg",
+    title: "KWONDO 1",
+    desc: "Peaceminusone x Nike",
+    price: 20000,
+    days: new Date("10/17/2022"),
+  },
+  {
+    image: "assets/shoeItems/DunkPanda_1.jpg",
+    title: "Dunk Low Panda",
+    desc: "Nike Dunk Low Retro",
+    price: 20000,
+    days: new Date("10/30/2022"),
+  },
+>>>>>>> Stashed changes
 ];
 
 //Create New Releases Cards
