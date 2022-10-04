@@ -128,14 +128,14 @@ header a:hover,
   filter: brightness(80%);
 }
 .mainContent {
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  grid-gap: 2em;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 5fr 1fr; */
+  /* align-items: center; */
+  /* grid-gap: 2em; */
   text-align: center;
   color: white;
   height: 55em;
@@ -151,7 +151,7 @@ header a:hover,
 }
 
 #changePicNext {
-  justify-self: end;
+  /* justify-self: end; */
 }
 
 .mainText {
