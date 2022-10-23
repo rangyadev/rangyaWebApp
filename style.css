@@ -385,7 +385,7 @@ footer {
   display: flex;
   margin-top: auto;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   font-family: "Arimo", sans-serif;
   background-color: black;
