@@ -36,13 +36,15 @@ header {
 }
 
 .searchBar a,
-header a {
+header a,
+.subHeader a {
   text-decoration: none;
   color: inherit;
 }
 
 header a:hover,
-#searchButton:hover {
+#searchButton:hover,
+.subHeader a:hover {
   color: inherit;
   opacity: 0.8;
 }
@@ -52,7 +54,8 @@ header a:hover,
 .closeSearchBar,
 .headerLogo,
 .headerUserInfo ul,
-.headerInfo ul {
+.headerInfo ul,
+.subHeaderInfo ul {
   margin: 1em;
 }
 
@@ -62,29 +65,60 @@ header a:hover,
 }
 
 .closeSearchBar,
-.headerUserInfo ul {
+.headerUserInfo ul,
+.subHeaderInfo ul {
   display: flex;
   align-items: center;
   gap: 2em;
 }
 
 .searchBarText,
-.headerInfo ul {
+.headerInfo ul,
+.subHeaderInfo ul {
   display: flex;
   align-items: center;
   gap: 2em;
   font-size: 0.8em;
 }
 
-.headerInfo ul {
+.headerInfo ul,
+.subHeaderInfo ul {
   letter-spacing: 0.25em;
   flex-wrap: wrap;
 }
 
-.headerInfo li :hover {
-  letter-spacing: 0.35em;
+.headerInfo li :hover,
+.subHeaderInfo li {
   transition: 0.1s;
 }
+
+/*Sub Header*/
+.subHeader {
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "Arimo", sans-serif;
+  font-size: 1.2em;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding-left: 3em;
+  padding-right: 3em;
+  list-style-type: none;
+  visibility: visible;
+}
+
+.subHeaderInfo {
+  margin-right: 2em;
+}
+
+/*Show SubHeader*/
 
 /*Search Bar*/
 .searchBar {
